@@ -14,6 +14,8 @@ public class alertsdemo {
 		
 		driver.get("https://demo.guru99.com/test/delete_customer.php");
 		
+		driver.manage().window().maximize(); //maximise the window
+		
 		driver.findElement(By.name("cusid")).sendKeys("123456");
 		
 		driver.findElement(By.name("submit")).click();
@@ -21,7 +23,10 @@ public class alertsdemo {
 		Alert alt = driver.switchTo().alert();
 		
 		String alertvalue = alt.getText();
+		//alt.accept();
 		System.out.println(alertvalue);
+		
+		//alt.dismiss();
 		
 		
 		
