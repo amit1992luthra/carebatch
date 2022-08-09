@@ -43,10 +43,6 @@ public class dropdownhandling {
 		
 		obj.deselectByVisibleText("Banana");
 		
-		
-		
-		
-		
 	}
 
 }
